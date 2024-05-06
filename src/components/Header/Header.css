@@ -1,0 +1,19 @@
+.headerLogo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.head {
+  background-color: rgb(67, 156, 183);
+}
+
+.btext {
+    color: rgb(255, 255, 255);
+}
+
+.imgCenter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

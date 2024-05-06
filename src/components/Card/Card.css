@@ -1,0 +1,45 @@
+#title{
+    font-size: larger;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#description{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 200px;
+    min-height: 120px;
+    text-align: center;
+    padding: 5px;
+    background-color: aqua;
+}
+
+.card-img {
+    width: 250px;
+    min-height: 120px;
+    text-align: center;
+    padding: 5px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.card-item:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.card-item:active{
+    background-color: rgb(205, 206, 206);
+    transform: translate(2px, 2px)
+    
+}

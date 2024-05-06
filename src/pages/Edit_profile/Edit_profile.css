@@ -1,0 +1,9 @@
+.spaceb {
+    justify-content: space-between;
+}
+
+.content {
+    height: 100px;
+    width: 500px;
+    margin: 0 auto;
+}
