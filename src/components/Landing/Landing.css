@@ -32,3 +32,7 @@
     align-items: center;
     gap: 4px;
 }
+
+.g1 {
+    justify-content: space-around;
+}

@@ -1,25 +1,26 @@
 import React from 'react'
+import "./Edit_profile.css"
 
 export const Edit = () => {
   return (
     <div className='spaceb'>
-        <h1>Edit profile</h1>
-        <div className='spaceb' >
-            <p>Hello!</p>
-        </div>
+        <h1 className='centre' >Edit profile</h1>
+        <br /><br /><br /><br />
         <div className='spaceb content' >
-          <label htmlFor="Username">Username:</label><br />
-          <input id="Username" type="text" placeholder="Username" /><br /><br />
-          <label htmlFor="Email">Email:</label><br />
-          <input id="Email" type="email" placeholder="Email" /><br /><br />
-          <label htmlFor="Password">Password:</label><br />
-          <input id="Password" type="password" placeholder="Password" /><br /><br />
-          <label htmlFor="Description">Description:</label><br />
-          <input id="Description" type="text" placeholder="Description" /><br /><br />
-          <label htmlFor="Neurodivergent_trait">Neurodivergent trait:</label><br />
-          <input id="Neurodivergent_trait" type="text" placeholder="Neurodivergent trait" /><br /><br />
-          <label htmlFor="Gender">Gender:</label><br />
-          <input id="Gender" type="text" placeholder="Gender" /><br /><br />
+          <div id='main'>
+            <label className="inline" htmlFor="Username">Username:</label><br />
+            <input className="inline" id="Username" type="text" placeholder="Username" /><br /><br />
+            <label className="inline" htmlFor="Email">Email:</label><br />
+            <input className="inline" id="Email" type="email" placeholder="Email" /><br /><br />
+          </div>
+          <div id="description">
+            <label className="inline" htmlFor="Description">Description:</label><br />
+            <input className="inline"id="Description" type="text" placeholder="Description" /><br /><br />
+            <label className="inline" htmlFor="Neurodivergent_trait">Neurodivergent trait:</label><br />
+            <input className="inline" id="Neurodivergent_trait" type="text" placeholder="Neurodivergent trait" /><br /><br />
+            <label className="inline" htmlFor="Gender">Gender:</label><br />
+            <input className="inline" id="Gender" type="text" placeholder="Gender" /><br /><br />
+          </div>
         </div>
     </div>
   )

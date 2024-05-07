@@ -1,9 +1,23 @@
 .spaceb {
     justify-content: space-between;
+    
 }
 
 .content {
     height: 100px;
     width: 500px;
+    margin: 0 auto;
+}
+
+#main {
+    background-color: blue;
+    color: blue;
+}
+
+.inline {
+    display: inline;
+}
+
+.centre {
     margin: 0 auto;
 }
