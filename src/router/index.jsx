@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/:forumId',
+        path: '/forum/:forumId',
         element: <Forum />
       },
       {
