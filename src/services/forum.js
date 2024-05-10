@@ -1,3 +1,4 @@
+import { UNSAFE_useRouteId } from "react-router-dom"
 import api from "./config.js"
 
 export const getAllForums = async() => {
@@ -7,8 +8,21 @@ export const getAllForums = async() => {
     return data
   } catch (error) {
     console.error(error)
-    throw new Error('Error getting Forums')
+    throw new Error('Error getting all Forums')
   }
+}
+
+export const createNewComment = async(forumId, comment) => {
+  const token = localStorage.getItem("token")
+  const userID = localStorage.getItem("id")
+  try {
+  const { data } = await api.post(`/comment/${forumId}`, {content: comment, userID: userID}, {headers: {Authorization: token}})
+  console.log(data)
+  return data
+} catch (error) {
+  console.error(error)
+  throw new Error('Error creating new comment')
+}
 }
 
 export const getAllCommentsFromForum = async(forumId) => {
@@ -19,6 +33,6 @@ export const getAllCommentsFromForum = async(forumId) => {
   return data
 } catch (error) {
   console.error(error)
-  throw new Error('Error getting Forums')
+  throw new Error("Error getting all forum'scomments")
 }
 }

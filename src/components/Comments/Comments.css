@@ -1,0 +1,29 @@
+.comment{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+}
+
+.myComment {
+    margin-left: auto;
+    background-color: rgb(255, 252, 219);
+}
+
+.otherComment {
+    background-color: rgb(252, 219, 255);
+}
+
+#date {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#username {
+    font-weight: bold;
+}

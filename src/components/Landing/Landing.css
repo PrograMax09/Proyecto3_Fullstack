@@ -1,6 +1,7 @@
 
 #container {
-    max-width: 50vw;
+    max-width: 60vw;
+    min-height: 50%;
     justify-self: center;
 } 
 

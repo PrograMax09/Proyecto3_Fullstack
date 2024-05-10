@@ -13,8 +13,19 @@ const Signup = () => {
         <input id="Password" type="password" placeholder="Password" /><br /><br />
         <label htmlFor="Description">Description:</label><br />
         <input id="Description" type="text" placeholder="Description" /><br /><br />
-        <label htmlFor="Neurodivergent_trait">Neurodivergent trait:</label><br />
-        <input id="Neurodivergent_trait" type="text" placeholder="Neurodivergent trait" /><br /><br />
+        <label className="inline" htmlFor="trait">Choose a trait:</label>
+        <select className="inline" name="trait" id="trait">
+            <option value="autism">Autism</option>
+            <option value="adhd">ADHD</option>
+            <option value="dyslexia">Dyslexia</option>
+            <option value="dyscalculia">Dyscalculia</option>
+            <option value="epilepsy">Epilepsy</option>
+            <option value="dysprexia">Dysprexia</option>
+            <option value="down_syndrome">Down Syndrome</option>
+            <option value="tourette_syndrome">Tourette Syndrome</option>
+            <option value="bipolar_disorder">Bipolar Disorder</option>
+            <option value="Other">Other</option>
+        </select><br /><br />
         <label htmlFor="Gender">Gender:</label><br />
         <input id="Gender" type="text" placeholder="Gender" /><br /><br />
       </div>

@@ -1,6 +1,8 @@
 #forumsContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 40px;
     justify-content: space-evenly;
+    margin-top: 100px;
 }
+

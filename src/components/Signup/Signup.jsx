@@ -22,7 +22,7 @@ const Signup = () => {
             <option value="bipolar_disorder">Bipolar Disorder</option>
             <option value="Other">Other</option>
         </select>
-        <p> Already have an account? Sign up!</p>
+        <p> Already have an account? Login!</p>
         </>
     )
 }
