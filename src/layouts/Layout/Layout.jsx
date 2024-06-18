@@ -16,12 +16,13 @@ const Layout = () => {
         <div id='outlet'>
           <Outlet/>
         </div>
-        <div id='bottomNav'>
-          { token && <SimpleBottomNavigation/>}
-        </div>
         <Footer/>
     </>
   )
 }
 
 export default Layout
+
+/*<div id='bottomNav'>
+{ token && <SimpleBottomNavigation/>}
+</div>*/

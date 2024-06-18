@@ -20,8 +20,8 @@ import ForumIcon from '@mui/icons-material/Forum';
         alignItems: 'center',
         position: 'fixed',
         bottom: '70px',
-        width: '100vw'
-        
+        width: '100vw',
+        marginTop: "100px",
       }}
     >
     <Box sx={{ width: 800 }}>
@@ -33,7 +33,9 @@ import ForumIcon from '@mui/icons-material/Forum';
         }}
         sx={{
            backgroundColor: 'rgb(234, 219, 255)',
-           color: '#ffff'
+           color: '#ffff',
+           borderTopLeftRadius: "12px",
+           borderTopRightRadius: "12px"
         }}
       >
         <BottomNavigationAction onClick={() => navigate("/forums")} label="Forums" icon={<ForumIcon />} sx={{ color: '#ffff'}} />

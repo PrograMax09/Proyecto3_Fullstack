@@ -4,6 +4,7 @@ import { useParams, useLocation } from 'react-router-dom'
 import Comments from '../../components/Comments/Comments'
 import './Forum.css'
 import MessageInput from '../../components/MessageInput/MessageInput'
+import SimpleBottomNavigation from '../../components/BottomNavigation/BottomNavigation'
 
 const Forum = () => {
   const [comments, setComments] = useState([])
@@ -29,14 +30,16 @@ const Forum = () => {
     <>
       <p id='titlePage'>{state.forum}</p>
       <div className='forumContainer'>
+      
         
         {
-          comments?.length && comments.map( comment => (
+          comments && comments?.length && comments.map( comment => (
             <Comments key={comment.id } comentario={comment} mine={comment.user_id === parseInt(user)}/> 
           ))
         }
         <MessageInput forumId={forumId} setComments={setComments} />
       </div>
+      <SimpleBottomNavigation />
     </>
   )
 }

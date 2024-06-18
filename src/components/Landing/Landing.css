@@ -3,6 +3,7 @@
     max-width: 60vw;
     min-height: 50%;
     justify-self: center;
+    margin-bottom: 100px
 } 
 
 .center {
@@ -18,22 +19,37 @@
 }
 
 .image {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
 
 .image_container {
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 40px;
+/*    justify-content: space-around;*/
 }
 
 .image_item {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 12px;
+    width: 400px
 }
 
-.g1 {
+#g1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#g2 {
+    display: flex;
+
+    justify-content: center;
+}
+
+#g3 {
+    display: flex;
+
     justify-content: space-around;
 }
